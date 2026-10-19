@@ -6,6 +6,19 @@ Split Fiction always splits the screen in half, even in online co-op where each 
 The mod uses the game's own built-in fullscreen mechanism (the same one Hazelight uses in certain story moments) through UE4SS, instead of hacking the renderer. That's why everything still looks and behaves like the original game.
 
 [size=5][b]Installation instructions[/b][/size]
+Two ways to install, both on the Files tab. Pick whichever you prefer, the mod is the same.
+
+[b]Option A: manual install (no exe)[/b]
+[list=1]
+[*]Close the game and download [b]Full Fiction (manual install)[/b].
+[*]In Steam: right-click Split Fiction > Manage > Browse local files, then go one folder up to [i]steamapps\common[/i].
+[*]Drag the [b]Split Fiction[/b] folder from the zip into [i]common[/i] and confirm merging the folders.
+[*]Launch the game and press [b]F10[/b].
+[/list]
+Auto mode: open [i]Split\Binaries\Win64\ue4ss\Mods\FullFiction\Scripts\fullfiction_config.lua[/i] in Notepad and change false to true.
+To uninstall, delete [i]Split\Binaries\Win64\dwmapi.dll[/i] and the [i]ue4ss[/i] folder next to it.
+
+[b]Option B: installer[/b]
 [list=1]
 [*]Close the game.
 [*]Download and run [b]FullFiction-Setup.exe[/b].

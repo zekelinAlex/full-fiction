@@ -6,6 +6,8 @@ Press **F10** in game to cycle: split screen > your view fullscreen > partner's 
 
 The mod is client-side only. Your partner doesn't need it.
 
+**Download:** [Full Fiction on Nexus Mods](https://www.nexusmods.com/splitfiction/mods/16)
+
 ## How it works
 
 Hazelight's engine already supports giving one player the whole screen (the game uses it in some story moments). The mod is a small [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) Lua script that calls the game's own reflected functions:
