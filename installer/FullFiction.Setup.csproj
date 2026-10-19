@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>FullFiction-Setup</AssemblyName>
+    <RootNamespace>FullFiction.Setup</RootNamespace>
+    <Version>1.1.0</Version>
+    <Product>Full Fiction</Product>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <PayloadZip>$(MSBuildThisFileDirectory)..\build\payload.zip</PayloadZip>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="$(PayloadZip)" LogicalName="payload.zip" />
+  </ItemGroup>
+
+  <Target Name="CheckPayload" BeforeTargets="BeforeBuild">
+    <Error Condition="!Exists('$(PayloadZip)')" Text="payload.zip not found, run build.ps1 instead of building the project directly." />
+  </Target>
+
+</Project>

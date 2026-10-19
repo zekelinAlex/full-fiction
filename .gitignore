@@ -1,0 +1,6 @@
+build/
+dist/
+installer/bin/
+installer/obj/
+tools/
+dumps/

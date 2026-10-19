@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Full Fiction description</title>
+<style>
+  body { font-family: Segoe UI, sans-serif; max-width: 760px; margin: 24px auto; padding: 0 16px; line-height: 1.5; }
+  .hint { background: #fff3cd; border: 1px solid #e0c36a; padding: 10px 14px; border-radius: 6px; font-size: 14px; }
+</style>
+</head>
+<body>
+<p class="hint">Ctrl+A, Ctrl+C here, then paste into the Nexus "Full description" editor (clear the placeholder text first). This yellow box will be copied too, delete it after pasting.</p>
+
+<h2>Description</h2>
+<p>Split Fiction always splits the screen in half, even in online co-op where each of you sits at your own monitor. That's half your screen spent on a view your partner already sees on theirs.</p>
+<p><b>Full Fiction</b> gives you your whole screen back. Press <b>F10</b> and your character fills the entire monitor. Press it again to peek at your partner's view, or once more to go back to the classic split screen.</p>
+<p>The mod uses the game's own built-in fullscreen mechanism (the same one Hazelight uses in certain story moments) through UE4SS, instead of hacking the renderer. That's why everything still looks and behaves like the original game.</p>
+
+<h2>Installation instructions</h2>
+<ol>
+  <li>Close the game.</li>
+  <li>Download and run <b>FullFiction-Setup.exe</b>.</li>
+  <li>The installer finds your Steam copy of Split Fiction automatically. If it doesn't, click "Choose game folder..." and point it to your Split Fiction folder.</li>
+  <li>(Optional) tick <b>Auto mode</b>.</li>
+  <li>Click <b>Install</b> and launch the game from Steam as usual.</li>
+</ol>
+<p>Windows SmartScreen may warn you because the installer isn't signed with a paid certificate. Click "More info" &gt; "Run anyway". Some antivirus tools also flag <i>dwmapi.dll</i>: that's a false positive, it's how UE4SS (the mod loader) hooks into Unreal Engine games.</p>
+<p><b>Uninstall:</b> run the installer again and click <b>Uninstall</b>. The mod never modifies game files, so Steam's "Verify integrity of game files" also brings everything back to vanilla.</p>
+
+<h2>Main features</h2>
+<ul>
+  <li><b>F10 view cycle:</b> split screen &gt; your view fullscreen &gt; partner's view fullscreen &gt; split screen</li>
+  <li><b>Cutscenes stay intact.</b> When a cutscene starts the mod steps aside and the game shows it exactly as intended.</li>
+  <li><b>Smart about special moments.</b> When the game switches to its own special screen layouts or forces a fullscreen view, the mod waits instead of fighting it.</li>
+  <li><b>Optional auto mode.</b> After every cutscene and loading screen your view goes fullscreen automatically, no key press needed. A bit less predictable in rare spots, but the most seamless experience. Toggle it in the installer anytime.</li>
+  <li><b>Client-side only.</b> Nothing about networking changes. Your partner doesn't need the mod and keeps playing normally.</li>
+  <li><b>Works with Friend's Pass</b> on either side.</li>
+  <li><b>No performance cost.</b> Rendering one view instead of two is, if anything, lighter on your GPU.</li>
+</ul>
+<p><b>Known limitations</b></p>
+<ul>
+  <li>Meant for <b>online</b> co-op. In local co-op on one screen it would hide player 2's view, so keep it on split screen there.</li>
+  <li>Game updates may break the mod until it's updated. If F10 stops working after a patch, check back here.</li>
+  <li>Split Fiction occasionally crashes with a "Fatal error" even without mods. If you get crashes noticeably more often with the mod, please report it and attach <i>Split\Binaries\Win64\ue4ss\UE4SS.log</i>.</li>
+</ul>
+
+<h2>Requirements</h2>
+<ul>
+  <li>Split Fiction, <b>Steam version</b> (the EA app version is not supported yet)</li>
+  <li>Windows 10 / 11 (the installer uses .NET Framework 4.8, which ships with Windows)</li>
+  <li>UE4SS is bundled, no separate download needed</li>
+</ul>
+
+<h2>Shout outs</h2>
+<ul>
+  <li><a href="https://github.com/UE4SS-RE/RE-UE4SS">UE4SS team</a> for the mod loader (MIT license, included)</li>
+  <li>Hazelight Studios for an amazing game. Please support them.</li>
+</ul>
+<p>Enjoy your full screen, and say hi to your partner for me.</p>
+</body>
+</html>

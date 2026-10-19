@@ -1,0 +1,50 @@
+[size=5][b]Description[/b][/size]
+Split Fiction always splits the screen in half, even in online co-op where each of you sits at your own monitor. That's half your screen spent on a view your partner already sees on theirs.
+
+[b]Full Fiction[/b] gives you your whole screen back. Press [b]F10[/b] and your character fills the entire monitor. Press it again to peek at your partner's view, or once more to go back to the classic split screen.
+
+The mod uses the game's own built-in fullscreen mechanism (the same one Hazelight uses in certain story moments) through UE4SS, instead of hacking the renderer. That's why everything still looks and behaves like the original game.
+
+[size=5][b]Installation instructions[/b][/size]
+[list=1]
+[*]Close the game.
+[*]Download and run [b]FullFiction-Setup.exe[/b].
+[*]The installer finds your Steam copy of Split Fiction automatically. If it doesn't, click "Choose game folder..." and point it to your Split Fiction folder.
+[*](Optional) tick [b]Auto mode[/b].
+[*]Click [b]Install[/b] and launch the game from Steam as usual.
+[/list]
+Windows SmartScreen may warn you because the installer isn't signed with a paid certificate. Click "More info" > "Run anyway". Some antivirus tools also flag [i]dwmapi.dll[/i]: that's a false positive, it's how UE4SS (the mod loader) hooks into Unreal Engine games.
+
+[b]Uninstall:[/b] run the installer again and click [b]Uninstall[/b]. The mod never modifies game files, so Steam's "Verify integrity of game files" also brings everything back to vanilla.
+
+[size=5][b]Main features[/b][/size]
+[list]
+[*][b]F10 view cycle:[/b] split screen > your view fullscreen > partner's view fullscreen > split screen
+[*][b]Cutscenes stay intact.[/b] When a cutscene starts the mod steps aside and the game shows it exactly as intended.
+[*][b]Smart about special moments.[/b] When the game switches to its own special screen layouts or forces a fullscreen view, the mod waits instead of fighting it.
+[*][b]Optional auto mode.[/b] After every cutscene and loading screen your view goes fullscreen automatically, no key press needed. A bit less predictable in rare spots, but the most seamless experience. Toggle it in the installer anytime.
+[*][b]Client-side only.[/b] Nothing about networking changes. Your partner doesn't need the mod and keeps playing normally.
+[*][b]Works with Friend's Pass[/b] on either side.
+[*][b]No performance cost.[/b] Rendering one view instead of two is, if anything, lighter on your GPU.
+[/list]
+
+[b]Known limitations[/b]
+[list]
+[*]Meant for [b]online[/b] co-op. In local co-op on one screen it would hide player 2's view, so keep it on split screen there.
+[*]Game updates may break the mod until it's updated. If F10 stops working after a patch, check back here.
+[*]Split Fiction occasionally crashes with a "Fatal error" even without mods. If you get crashes noticeably more often with the mod, please report it and attach [i]Split\Binaries\Win64\ue4ss\UE4SS.log[/i].
+[/list]
+
+[size=5][b]Requirements[/b][/size]
+[list]
+[*]Split Fiction, [b]Steam version[/b] (the EA app version is not supported yet)
+[*]Windows 10 / 11 (the installer uses .NET Framework 4.8, which ships with Windows)
+[*]UE4SS is bundled, no separate download needed
+[/list]
+
+[size=5][b]Shout outs[/b][/size]
+[list]
+[*][url=https://github.com/UE4SS-RE/RE-UE4SS]UE4SS team[/url] for the mod loader (MIT license, included)
+[*]Hazelight Studios for an amazing game. Please support them.
+[/list]
+Enjoy your full screen, and say hi to your partner for me.
